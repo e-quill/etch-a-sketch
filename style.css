@@ -11,6 +11,7 @@
   width: 10px;
   margin: 1px 0px;
   padding: 10px;
+  flex-shrink: 1;
 }
 
 .dimension {

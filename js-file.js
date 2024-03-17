@@ -14,8 +14,18 @@ function createGrid(squares = 16){
 
 function promptDimensions() {
   let input = prompt("Number of Square Per Side (Maximum: 100)")
-  createGrid(input)
+  removeGrid()
+  createGrid(parseInt(input))
 }
+
+function removeGrid(){
+  const elements = document.querySelectorAll('.box');
+  const container = document.querySelector(".container");
+  while (container.hasChildNodes()) {
+    container.removeChild(container.firstChild);
+  }
+}
+
 
 function resetGrid() {
   const elements = document.querySelectorAll('.box');
