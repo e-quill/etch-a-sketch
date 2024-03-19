@@ -1,13 +1,17 @@
-function createGrid(squares = 16){
+function createGrid(squares = 2){
   for (i = 0; i < squares; i++){
     for (j = 0; j < squares; j++){
       const container = document.querySelector(".container");
       const div = document.createElement("div");
+      const CON_HEIGHT = 850;
+      const CON_WIDTH = 900;
       div.addEventListener("mouseover", () => {
         div.style.backgroundColor = "black";
       });
       div.classList.add("box");
-      container.appendChild(div);
+      div.style.height = `${CON_HEIGHT/ squares}px`
+      div.style.width = `${CON_WIDTH/squares}px`
+      container.appendChild(div)
     }
   }
 }
@@ -25,7 +29,6 @@ function removeGrid(){
     container.removeChild(container.firstChild);
   }
 }
-
 
 function resetGrid() {
   const elements = document.querySelectorAll('.box');
