@@ -17,9 +17,14 @@ function createGrid(squares = 2){
 }
 
 function promptDimensions() {
-  let input = prompt("Number of Square Per Side (Maximum: 100)")
-  removeGrid()
-  createGrid(parseInt(input))
+  let input = prompt("Number of Square Per Side (Maximum: 100)");
+  if (input > 100) {
+    alert("Input greater than 100, please enter a smaller number.")
+  } else{
+    removeGrid()
+    createGrid(parseInt(input))
+  }
+  
 }
 
 function removeGrid(){
