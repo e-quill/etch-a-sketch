@@ -15,6 +15,16 @@
   box-sizing: border-box;
 }
 
+
+.button {
+  padding: 10px;
+  margin: 5px 5px;
+  background-color: white;
+  height: 50px;
+  width: 200px;
+  font-size: 15px;
+}
+
 .dimension {
   margin-bottom: 20px;
 }
