@@ -5,7 +5,7 @@ function createGrid(squares = 16){
       const div = document.createElement("div");
       const CON_HEIGHT = 850;
       const CON_WIDTH = 900;
-      div.addEventListener("mouseover", () => {
+      div.addEventListener("click", () => {
         div.style.backgroundColor = "black";
       });
       div.classList.add("box");
