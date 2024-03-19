@@ -1,4 +1,4 @@
-function createGrid(squares = 2){
+function createGrid(squares = 16){
   for (i = 0; i < squares; i++){
     for (j = 0; j < squares; j++){
       const container = document.querySelector(".container");
